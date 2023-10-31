@@ -3546,7 +3546,7 @@ const anotherPuppy = {...puppy,  ...puppy.address};
 // 6. Place ul tag with items on the page
 // */
 
-const technologies = ["Javascript", "Python", "CSS", "HTML"];
+// const technologies = ["Javascript", "Python", "CSS", "HTML"];
 
-const containerEl = document.querySelector('#container');
-console.dir(containerEl)
+// const containerEl = document.querySelector('#container');
+// console.dir(containerEl)
