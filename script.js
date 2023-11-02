@@ -1,22 +1,22 @@
-/*
-# Task 1
+// /*
+// # Task 1
 
-const technologies = ["Javascript", "Python", "CSS", "HTML"];
+// const technologies = ["Javascript", "Python", "CSS", "HTML"];
 
-1. Get container element
-2. Create a cycle for sorting array elements
-3. Create a li tag
-4. Write the text from the array inside the list items
-5. Place li inside ul
-6. Place ul tag with items on the page
-*/
+// 1. Get container element
+// 2. Create a cycle for sorting array elements
+// 3. Create a li tag
+// 4. Write the text from the array inside the list items
+// 5. Place li inside ul
+// 6. Place ul tag with items on the page
+// */
 
 const technologies = ["Javascript", "Python", "CSS", "HTML"];
 const containerEl = document.querySelector("#container");
 // console.dir(containerEl);
 
 const listEl = document.createElement("ul"); //<ul></ul>
-containerEl.append(listEl);
+// containerEl.append(listEl);
 
 const firstElFromList = document.createElement("li");
 firstElFromList.innerText = technologies[0];
@@ -88,7 +88,7 @@ const colors = [
 
 colors.forEach((color) => {
     const buttonEl = document.createElement("button"); // <button></button>
-    containerEl.append(buttonEl);
+    // containerEl.append(buttonEl);
     buttonEl.textContent = color.label;
 
     if (color.isPrimary) {
@@ -96,7 +96,7 @@ colors.forEach((color) => {
         buttonEl.classList.add("primary-button");
     } else {
         buttonEl.style.backgroundColor = color.color;
-        console.dir(buttonEl);
+        // console.dir(buttonEl);
     }
 });
 
@@ -115,3 +115,113 @@ colors.forEach((color) => {
 // console.dir(testElementById);
 // console.dir(testElementByClass[0]);
 // console.dir(testElementByTag);
+
+//lectia 12
+//ex 1
+
+const toggleButton = document.querySelector(".toggle-button");
+const icon = document.querySelector(".icon");
+
+toggleButton.addEventListener("dblclick", () => {
+    icon.classList.toggle("icon-red");
+});
+
+// setTimeout(() => {
+// toggleButton.removeEventListener('click', ) // nu  functioneaza ca trebuie specificata refetina functiei
+// }, 5000);
+
+const handleClick = () => {
+    icon.classList.toggle("icon-red");
+};
+
+toggleButton.addEventListener("dblclick", handleClick());
+
+setTimeout(
+    () => toggleButton.removeEventListener("dblclick", handleClick),
+    5000
+);
+
+/**
+ * Submit FORM
+ */
+
+const loginForm = document.getElementById("loginForm");
+
+loginForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    console.log(e);
+
+    let username = document.getElementById("username");
+    let password = document.getElementById("password");
+
+    if (username.value === "" || password.value === "") {
+        alert("te rugam sa introduceti o valoare in ambele campuri");
+        // debugger;
+    } else {
+        // fa o actiune cu informatia din imputuri
+        alert("Formularul a fost salvat cu succes");
+        console.log(
+            `this form has a username of ${username.value} and the password: ${password.value}`
+        );
+    }
+
+    username.value = "";
+    password.value = "";
+});
+
+let username = document.getElementById("username");
+let password = document.getElementById("password");
+
+setTimeout(() => {
+    username.value = "simon";
+}, 5000);
+
+// Example 3
+
+const registerForm = document.querySelector("#registerForm");
+const registerFormErrors = document.getElementsByClassName("form-errors");
+
+const markFormWithError = () => {
+    if (!registerForm.classList.contains("error")) {
+        registerForm.classList.add("error");
+    }
+    registerFormErrors.textContent = message;
+};
+
+const handleSuccess = () => {
+    registerForm.classList.remove("error");
+    registerFormErrors.textContent = "";
+    console.log(`Logged in successful!`);
+};
+
+registerForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    console.log();
+    const { elements } = e.target;
+    const username = elements["username-register"].value;
+    const password = elements["password-register"].value;
+
+    // if (!username || !password) {
+    //     markFormWithError("Username-ul sau parola nu sunt definite");
+    // } else if (username.length > 15) {
+    //     markFormWithError("Username-ul nu poate avea mai mult de 15 caractere");
+    // } else if (password.length < 8) {
+    //     markFormWithError("Parola nu poate avea sub 8 caractere");
+    // } else {
+    //     handleSuccess();
+    // }
+
+    if (!username || !password) {
+        markFormWithError("Username-ul sau parola nu sunt definite");
+        return;
+    }
+    if (username.length > 15) {
+        markFormWithError("Username-ul nu poate avea mai mult de 15 caractere");
+        return;
+    }
+    if (password.length < 8) {
+        markFormWithError("Parola nu poate avea sub 8 caractere");
+        return;
+    }
+    handleSuccess();
+});

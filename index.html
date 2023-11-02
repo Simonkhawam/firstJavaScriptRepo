@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./css/main.min.css" />
+        <!-- <link rel="stylesheet" href="./css/main.min.css" /> -->
         <link rel="stylesheet" href="./reset.css" />
         <link
             rel="stylesheet"
@@ -13,7 +13,7 @@
 
         <title>my first JavaScript file</title>
         <style>
-            .primary-button {
+            /* .primary-button {
                 background-color: purple;
                 color: white;
                 padding: 16px 8px;
@@ -21,26 +21,116 @@
             }
             .primary-button a {
                 color: white;
+            } */
+
+            /* lectia 12
+            ex 1 */
+            .icon {
+                display: block;
+                width: 64px;
+                height: 64px;
+                background-color: yellow;
+                margin: 16px 0;
+            }
+            .icon-red {
+                background-color: red;
+            }
+
+            form {
+                margin-top: 16px;
+                border: 1px solid rgb(150, 24, 24);
+                padding: 16px;
+            }
+
+            form-errors {
+                background-color: lightcoral;
+                border-color: red;
             }
         </style>
     </head>
     <body>
         <!-- <p id="container"> test1</p> -->
-        <main class="container-homework page">
+        <!-- <main class="container-homework page">
             <h1 class="just-for fun">Testing</h1>
             <section class="just-section">
                 <p>anything what so ever..</p>
-            </section>
-            <!-- <ul>
+            </section> -->
+        <!-- <ul>
                 <li>Javascript</li>
                 <li>Python</li>
                 <li>CSS</li>
                 <li>HTML</li>
             </ul> -->
-            <div id="container"></div>
+        <!-- <div id="container"></div>
 
             <div class="testClass" id="testId"></div>
-        </main>
-        <script src="./script.js" type="module"></script>
+        </main> -->
+
+        // lectia 12 ex 1 //ex 1
+        <h1 class="heading-primary sticky">Practica</h1>
+        <section class="lesson-example">
+            <p>
+                In aceste lectii vom lucra mai mult in consola browser-ului.
+                Pentru a o deschide acceseaza Developer Tools (Inspect Element,
+                CMD + F12) -> Tab-ul Console, iar exemplele sunt adaugate cu
+                tag-ul &lt;script&gt;, inainte de inchiderea tag-ului
+                &lt;body&gt;
+            </p>
+        </section>
+
+        <!-- Example one -->
+
+        <div>
+            <span class="icon icon-red"></span>
+            <button class="toggle-button">Toggle</button>
+        </div>
+
+        <!--Example two-->
+        <div class="container">
+            <form action="" name="login" id="loginForm">
+                <h1>Login</h1>
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    class="form-control"
+                    placeholder="Enter your username"
+                />
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    class="form-control"
+                    placeholder="Enter your password"
+                />
+                <button type="submit">Submit</button>
+                <span class="form-errors"></span>
+            </form>
+            <form
+                action=""
+                name="register"
+                id="registerForm"
+                class="form-register"
+            >
+                <h1>Register</h1>
+                <input
+                    type="text"
+                    id="username-register"
+                    name="username"
+                    class="form-control"
+                    placeholder="Enter your username"
+                />
+                <input
+                    type="password"
+                    id="password-register"
+                    name="password"
+                    class="form-control"
+                    placeholder="Enter your password"
+                />
+                <button type="submit">Submit</button>
+                <span class="form-errors"></span>
+            </form>
+        </div>
+        <script src="./script.js"></script>
     </body>
 </html>
