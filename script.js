@@ -173,7 +173,7 @@ let username = document.getElementById("username");
 let password = document.getElementById("password");
 
 setTimeout(() => {
-    username.value = "simon";
+    username.value = "Hi simon";
 }, 5000);
 
 // Example 3
@@ -225,3 +225,80 @@ registerForm.addEventListener("submit", (e) => {
     }
     handleSuccess();
 });
+
+const nameInput = document.querySelector("#name-input");
+const nameOutput = document.querySelector("#name-output");
+nameInput.addEventListener("input", (e) => {
+    console.log(e);
+    nameOutput.innerHTML = e.target.value;
+});
+
+// const select = document.querySelector(".pizza-select");
+// const textOutput = document.querySelector(".text-output");
+// const valueOutput = document.querySelector(".value-output");
+
+// select.addEventListener("change", setOutput); //adauga un event listener de tip change la elem.select
+
+// function setOutput(event) {
+//     //functia va fi apelata atunci cand evenim. change are loc pe elementul select
+//     const selectedOptionValue = event.currentTarget.value;
+//     //aici linia de cod reprezinta valoarea optiunii selectate (vegetarian,four meats..)
+//     const selectedOptionIndex = event.currentTarget.selectedIndex;
+//     //obtine indexul optiunii selectate,aceasta linie de cod am folosit-o pentru a afisa sus ce optine am selectat??
+//     //deci pana aici noi am implementat acest cod pentru a putea manipula meniul cu optiunile pentru pizza?/?
+//     const selectedOptionText =
+//         event.currentTarget.options[selectedOptionIndex].text;
+//     /*aici obtinem rezultatul optiunii dorite din meniu,adica se accesează elementul
+// 	option corespunzător indexului opțiunii selectate și se obține textul acelei opțiuni.*/
+//     textOutput.textContent = selectedOptionText;
+//     valueOutput.textContent = selectedOptionValue;
+//     //iar aici pentru a putea afisa la Selected option text/Selected option value in functie de optiunea pe care o alegem?
+// }
+
+// lectia 13
+
+const colorPalette = document.querySelector(".color-palette");
+const output = document.querySelector(".output");
+
+colorPalette.addEventListener("click", selectColor);
+
+// This is where delegation «magic» happens
+function selectColor(event) {
+    if (event.target.nodeName !== "BUTTON") {
+        return;
+    }
+
+    const selectedColor = event.target.dataset.color;
+    output.textContent = `Selected color: ${selectedColor}`;
+    output.style.color = selectedColor;
+}
+
+// Some helper functions to render palette items
+createPaletteItems();
+
+function createPaletteItems() {
+    const items = [];
+    for (let i = 0; i < 60; i++) {
+        const color = getRandomHexColor();
+        const item = document.createElement("button");
+        item.type = "button";
+        item.dataset.color = color;
+        item.style.backgroundColor = color;
+        item.classList.add("item");
+        items.push(item);
+    }
+    colorPalette.append(...items);
+}
+
+function getRandomHexColor() {
+    const letters = "0123456789ABCDEF";
+    let color = "#";
+
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+
+    return color;
+}
+
+// End ex

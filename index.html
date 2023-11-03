@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- <link rel="stylesheet" href="./css/main.min.css" /> -->
         <link rel="stylesheet" href="./reset.css" />
+        <!-- <link rel="stylesheet" href="./styles.css" /> -->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -45,6 +46,41 @@
             form-errors {
                 background-color: lightcoral;
                 border-color: red;
+            }
+
+            /* lectia 13  */
+
+            body {
+                margin: 8px;
+                font-family: sans-serif;
+            }
+
+            .output {
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+            .color-palette {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+                gap: 4px;
+            }
+
+            .color-palette .item {
+                padding: 0;
+                margin: 0;
+                border: none;
+                border-radius: 4px;
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+                transition: transform 250ms ease-in-out;
+            }
+
+            .color-palette .item:hover {
+                transform: scale(1.1);
             }
         </style>
     </head>
@@ -131,6 +167,19 @@
                 <span class="form-errors"></span>
             </form>
         </div>
+
+        <input
+            type="text"
+            id="name-input"
+            placeholder="Please enter your name"
+        />
+        <h1>Hello, <span id="name-output">Anonymous</span>!</h1>
+
+        <!-- example from the conspect M.7 L.13 -->
+
+        <p class="output">Selected color: -</p>
+        <div class="color-palette"></div>
+
         <script src="./script.js"></script>
     </body>
 </html>
