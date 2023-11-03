@@ -278,7 +278,7 @@ createPaletteItems();
 
 function createPaletteItems() {
     const items = [];
-    for (let i = 0; i < 60; i++) {
+    for (let i = 0; i < 200; i++) {
         const color = getRandomHexColor();
         const item = document.createElement("button");
         item.type = "button";
