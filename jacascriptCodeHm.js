@@ -2,15 +2,14 @@
 
 // console.log(a);
 
-// Single line comment 
+// Single line comment
 
-/** 
+/**
  * Multi line comment
  * tot ce voi scrie aici
  * va fi scris pe mai
  * multe linii
  */
-
 
 /*
 Example 11 - The for loop
@@ -48,10 +47,6 @@ from min to max, but only if the number is a multiple of 5.
 //     console.log(b + 512);
 // }
 
-
-
-
-
 // let link = 'htpps://my-site.come/about';
 
 // const lastCharacter = link.charAt(link.length -1);
@@ -61,13 +56,6 @@ from min to max, but only if the number is a multiple of 5.
 // };
 // console.log(link);
 
-
-
-
-
-
-
-
 // let link = 'htpps://my-site.come/about';
 
 // const lastCharacter = link.charAt(link.length -1);
@@ -76,7 +64,6 @@ from min to max, but only if the number is a multiple of 5.
 //     link += '/';
 // };
 // console.log(link);
-
 
 // let link = 'htpps://my-site.come/about';
 
@@ -376,7 +363,7 @@ from min to max, but only if the number is a multiple of 5.
 // languages.splice(0, 0, "Python");
 // languages.splice(1, 1, "xxx");
 // languages.splice(3, 1, "test1", "test2", "test3");
-// console.log(languages); 
+// console.log(languages);
 
 // const oldClients = ["Mango", "Ajax", "Poly", "Kiwi"];
 // const newClients = ["Monkong", "Singu"];
@@ -391,28 +378,27 @@ from min to max, but only if the number is a multiple of 5.
 // function multiply(x, y, z) {
 //     console.log(`Rezultatul înmulțirii este ${x + y + z}`);
 //   }
-  
+
 //   // 2. Parsarea argumentelor
 //   multiply(2, 100, 5);
-//   multiply(4, 8, 12); 
+//   multiply(4, 8, 12);
 //   multiply(17, 6, 25);
 
 // function multiply(x, y, z) {
 //     console.log(`Rezultatul înmulțirii este ${x + y + z}`);
-  
-   
+
 //     return x * y * z;
 // }
 // multiply(2, 2, 2);
 
 // function count(countFrom = 0, countTo = 10, step = 1) {
 //     console.log(`countFrom = ${countFrom}, countTo = ${countTo}, step = ${step}`);
-  
+
 //     for (let i = countFrom; i <= countTo; i += step) {
 //       console.log(i);
 //     }
 //   }
-  
+
 //   count(1, 5); // countFrom = 1, countTo = 5, step = 1
 //   count(2); // countFrom = 2, countTo = 10, step = 1
 //   count(); // countFrom = 0, countTo = 10, step = 1
@@ -426,7 +412,7 @@ from min to max, but only if the number is a multiple of 5.
 //       console.log("Operația de retragere a fost finalizată cu succes!");
 //     }
 //   }
-  
+
 //   withdraw(0, 300); // "Vă rugăm să introduceți o sumă mai mare decât zero pentru retragere."
 //   withdraw(500, 300); // "Fonduri insuficiente în cont!"
 //   withdraw(100, 300); // "Operația de retragere a fost finalizată cu succes!"
@@ -438,7 +424,7 @@ from min to max, but only if the number is a multiple of 5.
 //       console.log("Introduceți o sumă mai mare decât zero pentru a finaliza tranzacția.");
 //       return;
 //     }
-  
+
 //     // Dacă condiția primului if nu este îndeplinită, corpul acestuia este omis
 //     // și interpretorul ajunge la al doilea if.
 //     // Dacă condiția este adevărată, se apelează console.log și funcția este oprită.
@@ -447,12 +433,12 @@ from min to max, but only if the number is a multiple of 5.
 //       console.log("Fonduri insuficiente în cont");
 //       return;
 //     }
-  
+
 //     // Dacă niciunul dintre if-urile anterioare nu a fost îndeplinit,
 //     // interpretorul ajunge la acest cod și îl execută.
 //     console.log("Operațiune de retragere este finalizată");
 //   }
-  
+
 //   withdraw(0, 300); // "Introduceți o sumă mai mare decât zero pentru a finaliza tranzacția."
 //   withdraw(500, 300); // "Fonduri insuficiente în cont"
 //   withdraw(100, 300); // "Operațiune de retragere este finalizată"
@@ -521,8 +507,6 @@ from min to max, but only if the number is a multiple of 5.
 // console.log(min(1, 1));
 // console.log(min(1, 1));
 
-
-
 // function getRectArea(dimensions) {
 //     const values = dimensions.split(' ');
 //     const dimensionA = Number(values[0]);
@@ -537,7 +521,7 @@ from min to max, but only if the number is a multiple of 5.
 //     for (let i = 0; i < items.length; i++) {
 //         const numberOfItem = i + 1;
 //         const value = items[i];
-//         console.log(`${numberOfItem} - ${value}`)    
+//         console.log(`${numberOfItem} - ${value}`)
 //     }
 // }
 // logItems(["Mango", "Poly", "Ajax"]);
@@ -551,7 +535,7 @@ from min to max, but only if the number is a multiple of 5.
 // console.log(arrayOfPhones);
 // for (let i = 0; i < arrayOfNames.length; i++) {
 //     console.log(`${arrayOfNames[i]} - ${arrayOfPhones[i]}`);
-    
+
 // }
 // }
 
@@ -576,7 +560,6 @@ from min to max, but only if the number is a multiple of 5.
 // console.log(findLargestNumber([2, 17, 94, 1, 23, 37])); // 94
 // console.log(findLargestNumber([49, 4, 7, 83, 12])); // 83
 
-
 // function calAverage() {
 //     let total = 0;
 //     for (let i = 0; i < arguments.length; i++){
@@ -585,14 +568,13 @@ from min to max, but only if the number is a multiple of 5.
 
 //     const average = total / arguments.length;
 //     return average / arguments.length;
-    
-    // return average;
-    ///
+
+// return average;
+///
 
 // console.log(calAverage(1, 2, 3, 4)); // 2.5
 // console.log(calAverage(14, 8, 2)); // 8
 // console.log(calAverage(27, 43, 2, 8, 36)); // 23.2
-
 
 // function formatTime(totalMinutes) {
 //     const hours = Math.floor(totalMinutes / 60);
@@ -631,7 +613,7 @@ from min to max, but only if the number is a multiple of 5.
 //         return;
 //     }
 //     courses.push(courseName);
-    
+
 // }
 
 // function removeCourse(courseName){
@@ -670,13 +652,13 @@ from min to max, but only if the number is a multiple of 5.
 //     rating: 8.38,
 //   };
 //   const keys = Object.keys(book);
-  
+
 //   for (const key of keys) {
 //     // Key
 //     console.log(key);
 //       // Property value
 //   console.log(book[key]);
-// } 
+// }
 
 // const goods = {
 //     apples: 6,
@@ -684,15 +666,15 @@ from min to max, but only if the number is a multiple of 5.
 //     bread: 4,
 //     cheese: 7,
 //   };
-  
+
 //   const values = Object.values(goods); // [6, 3, 4, 7]
-  
+
 //   let total = 0;
-  
+
 //   for (const value of values) {
 //     total += value;
 //   }
-  
+
 //   console.log(total); // 20
 
 // LOVE THIS *************
@@ -704,10 +686,10 @@ from min to max, but only if the number is a multiple of 5.
 //   };
 //   const keys = Object.keys(book);
 //   console.log(keys); // ['title', 'author', 'rating']
-  
+
 //   const values = Object.values(book);
 //   console.log(values); // ['The Last Kingdom', 'Bernard Cornwell', 8.38]
-  
+
 //   const entries = Object.entries(book);
 //   console.log(entries);
 //   // [["title", "The Last Kingdom"], ["author", "Bernard Cornwell"], ["rating", 8.38]]
@@ -728,7 +710,7 @@ from min to max, but only if the number is a multiple of 5.
 //       author: "Fyodor Dostoevsky",
 //       rating: 7.75,
 //     },
-//   ]; 
+//   ];
 
 // for (const book of books) {
 //     // Book object
@@ -793,7 +775,6 @@ from min to max, but only if the number is a multiple of 5.
 
 // ### Code
 
-
 // const salaries = {
 //   John: 100,
 //   Ann: 160,
@@ -822,7 +803,6 @@ from min to max, but only if the number is a multiple of 5.
 
 // ### Code
 
-
 // const stones = [
 //   { name: "Emerald", price: 1300, quantity: 4 },
 //   { name: "Diamond", price: 2700, quantity: 3 },
@@ -831,7 +811,7 @@ from min to max, but only if the number is a multiple of 5.
 // ];
 
 // function calcTotalPrice(stones, stoneName){
-    
+
 //     for (const key of stones){
 //         if (key.name === stoneName) {
 //             return key.price * key.quantity;
@@ -840,9 +820,6 @@ from min to max, but only if the number is a multiple of 5.
 //     return 'stone do not exist';
 // }
 // console.log(calcTotalPrice(stones, 'Rubble'));
-
-
-
 
 // ## Example 4 - Complex tasks
 
@@ -856,7 +833,6 @@ from min to max, but only if the number is a multiple of 5.
 //  * You can deposit or withdraw money from your account.
 //  */
 
-
 /*
  * Each transaction is an object with properties: id, type and amount
  */
@@ -865,18 +841,18 @@ from min to max, but only if the number is a multiple of 5.
 //     DEPOSIT: "deposit",
 //     WITHDRAW: "withdraw",
 //   };
-  
+
 //   /*
 //    * Each transaction is an object with properties: id, type and amount
 //    */
-  
+
 //   const account = {
 //     // Current account balance
 //     balance: 0,
 //     // Transaction History
 //     transactions: [],
 //     transactionsId: 0,
-  
+
 //     /*
 //      * Method creates and returns a transaction object.
 //      * Accepts amount and type of transaction.
@@ -890,7 +866,7 @@ from min to max, but only if the number is a multiple of 5.
 //         this.transactionsId++;
 //         this.transactions.push(newTransaction);
 //     },
-  
+
 //     /*
 //      * The method responsible for adding the amount to the balance..
 //      * Accepts the amount of the transaction.
@@ -901,7 +877,7 @@ from min to max, but only if the number is a multiple of 5.
 //         this.createTransaction(amount, Transaction.DEPOSIT);
 //         this.balance += amount;
 //     },
-  
+
 //     /*
 //      *The method responsible for withdrawing the amount from the balance.
 //      * Calls createTransaction to create a transaction object
@@ -921,14 +897,14 @@ from min to max, but only if the number is a multiple of 5.
 //         this.createTransaction(amount, Transaction.WITHDRAW);
 //         this.balance -= amount;
 //     },
-  
+
 //     /*
 //      * The method returns the current balance
 //      */
 //     getBalance() {
 //         console.log(`Balanta este: ${this.balance}`);
 //     },
-  
+
 //     /*
 //      * The method searches and returns the transaction object by id
 //      */
@@ -936,20 +912,20 @@ from min to max, but only if the number is a multiple of 5.
 //         for (const item of this.transactions){
 //             if(item.id === id){
 //                 console.log(`Tranzactia cu id-ul: ${item.id} - valoare: ${item.amount} - ${item.type}`);
-                
+
 //                 return item;
 //             }
 //         }
 //         console.log(`Nu exista tranzactia cu id-ul: ${id}`);
 //     },
-  
+
 //     /*
 //      * The method returns the amount of funds
 //      *a specific type of transaction from the entire history of transactions
 //      */
 //     getTransactionTotal(type) {
 //         let sum = 0;
-        
+
 //         for(const item of this.transactions){
 //             if(item.type === type){
 //                 sum += item.amount;
@@ -1006,14 +982,14 @@ from min to max, but only if the number is a multiple of 5.
 //     title: "The Last Kingdom",
 //     author: "Bernard Cornwell",
 //   };
-  
+
 //   // Adăugăm o imagine de copertă dacă aceasta nu se află în obiectul carte
 //   const {
 //     title,
 //     coverImage = "https://via.placeholder.com/640/480",
 //     author,
 //   } = book;
-  
+
 //   console.log(title); // The Last Kingdom
 //   console.log(author); // Bernard Cornwell
 //   console.log(coverImage); // https://via.placeholder.com/640/480
@@ -1023,32 +999,28 @@ from min to max, but only if the number is a multiple of 5.
 //     coverImage:
 //       "https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg",
 //   };
-  
+
 //   const {
 //     title: firstTitle,
 //     coverImage: firstCoverImage = "https://via.placeholder.com/640/480",
 //   } = firstBook;
-  
+
 //   console.log(firstTitle); // The Last Kingdom
 //   console.log(firstCoverImage); // https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg
 
 // de explicat mai mult!
 
-
-  
 //   const secondBook = {
 //     title: "Amintiri din copilărie",
 //   };
-  
+
 //   const {
 //     title: secondTitle,
 //     coverImage: secondCoverImage = "https://via.placeholder.com/640/480",
 //   } = secondBook;
-  
+
 //   console.log(secondTitle); // Amintiri din copilărie
 //   console.log(secondCoverImage); // https://via.placeholder.com/640/480
-
-
 
 // const books = [
 //     {
@@ -1062,7 +1034,7 @@ from min to max, but only if the number is a multiple of 5.
 //       rating: 8.51,
 //     },
 //   ];
-  
+
 //   for (const book of books) {
 //     // console.log(book.title);
 //     // console.log(book.author);
@@ -1071,14 +1043,13 @@ from min to max, but only if the number is a multiple of 5.
 
 // for (const book of books) {
 //     const { title, author, rating } = book;
-  
+
 //     console.log(title);
 //     console.log(author);
 //     console.log(rating);
 //   }
 
-//...iar de explicat mai mult!! 
-
+//...iar de explicat mai mult!!
 
 // const user = {
 //     name: "Jacques Gluke",
@@ -1089,13 +1060,13 @@ from min to max, but only if the number is a multiple of 5.
 //       likes: 1308,
 //     },
 //   };
-  
+
 //   const {
 //     name,
 //     tag,
 //     stats: { followers, views: userViews, likes: userLikes = 0 },
 //   } = user;
-  
+
 //   console.log(name); // Jacques Gluke
 //   console.log(tag); // jgluke
 //   console.log(followers); // 5603
@@ -1113,12 +1084,12 @@ from min to max, but only if the number is a multiple of 5.
 //     const numericHeight = Number(height.replace(",", "."));
 //     return Number((numericWeight / numericHeight ** 2).toFixed(1));
 //   }
-  
+
 //   // It was
 //   // console.log(calcBMI('88,3', '1.75'));
 //   // console.log(calcBMI('68,3', '1.65'));
 //   // console.log(calcBMI('118,3', '1.95'));
-  
+
 //   // Is expected
 //   console.log(
 //     calcBMI({
@@ -1144,7 +1115,6 @@ from min to max, but only if the number is a multiple of 5.
 // Rewrite the function so that it takes one object of the parameter instead of a set
 // of independent arguments.
 
-
 // function printContactsInfo(arg) {
 //     const { names: listOfNames, phones: listOfPhones} = arg;
 
@@ -1167,12 +1137,10 @@ from min to max, but only if the number is a multiple of 5.
 //   phones: "89001234567,89001112233,890055566377,890055566300",
 // });
 
-
 // ## Example 3 - Deep destructuring
 
 // Rewrite the property so that it uses one object's parameter instead of a set
 // of independent arguments.
-
 
 // function getBotReport(arg) {
 //     const { companyName, bots } = arg;
@@ -1199,7 +1167,6 @@ from min to max, but only if the number is a multiple of 5.
 // Rewrite the function so that it accepts a parameters object with properties
 // `companyName` and `stock` and display a report about the number of goods in the warehouse
 // of any companies.
-
 
 // function getStockReport(arg) {
 //     const { companyName: numeNouCompanie, stock } = arg;
@@ -1230,7 +1197,7 @@ from min to max, but only if the number is a multiple of 5.
 //     }
 // }
 // console.log(getStockReport(obiectTrimisFunctiei));
- 
+
 // console.log(
 //   getStockReport({
 //     companyName: "Belacci",
@@ -1242,17 +1209,15 @@ from min to max, but only if the number is a multiple of 5.
 //   })
 // ); // "Belacci has 35 item in stock"
 
-
 // ## Example 5 - operation Spread
 
 // Extend the `createContact(partialContact)` function so that it returns a new
 // contact object with `id` and `createdAt` properties added, as well as `list` with
 // value "default" if there is no such property in `partialContact`.
 
-
 // function generateId() {
 //     return Math.random() + "Random";
-//   }  
+//   }
 
 // function createContact(partialContact) {
 //   return {
@@ -1278,12 +1243,10 @@ from min to max, but only if the number is a multiple of 5.
 //   })
 // );
 
-
 // ## Example 6 - Operation rest
 
 // Write a `transformUsername(user)` function to return a new object
 // with `fullName` property instead of `firstName` and `lastName`.
-
 
 // function transformUsername(arg) {
 //     const { firstName, lastName, ...restulProprietatilor } = arg;
@@ -1342,8 +1305,8 @@ from min to max, but only if the number is a multiple of 5.
 //     }
 // }
 
-// const copyObject = {...originalObject, address: {...originalObject.address}}; ///important!! 
-// const fakeObjectCopy = originalObject; 
+// const copyObject = {...originalObject, address: {...originalObject.address}}; ///important!!
+// const fakeObjectCopy = originalObject;
 // fakeObjectCopy.name = 'Alex';
 
 // copyObject.name = 'bob';
@@ -1356,38 +1319,36 @@ from min to max, but only if the number is a multiple of 5.
 // function greet(name) {
 //     return `Bine ai venit, ${name}.`;
 //   }
-  
+
 //   // Apelăm funcția greet și printăm rezultatul în consolă
 //   console.log(greet("simon")); // Bine ai venit, Andrei.
-  
+
 //   // Parsăm funcția greet fără a fi apelată pentru a o printa în consolă
 //   console.log(greet); // ƒ greet() { return `Bine ai venit, ${name}.`; }
 
-
-
-  // Funcție callback
+// Funcție callback
 // function greet(name) {
 //     console.log(`Bine ai venit taztouz, ${name}.`);
 //   }
-  
+
 //   // Funcție de tip HOF
 //   function registerGuest(name, callback) {
 //     // console.log(`Introducem datele vizitatorului în sistem: ${name}.`);
 //     callback(name);
 //   }
-  
+
 //   registerGuest("majd", greet);
 
 // function registerGuest(name, callback) {
 //     console.log(`Introducem datele vizitatorului în sistem: ${name}.`);
 //     callback(name);
 //   }
-  
+
 //   // Transmitem funcția inline greet ca și callback.
 //   registerGuest("Andrei", function greet(name) {
 //     console.log(`Bine ai venit, ${name}.`);
 //   });
-  
+
 //   // Transmitem funcția notify greet ca și callback.
 //   registerGuest("Andrei", function notify(name) {
 //     console.log(`Dragă ${name}, comanda dvs. va fi procesată în 30 de minute.`);
@@ -1396,7 +1357,7 @@ from min to max, but only if the number is a multiple of 5.
 // function processCall(recipient) {
 //     // Simulăm disponibilitatea unui abonat cu un număr aleatoriu
 //     const isRecipientAvailable = Math.random() > 0.5;
-  
+
 //     if (!isRecipientAvailable) {
 //       console.log(`Abonatul ${recipient} nu este disponibil, va rugăm să lăsați un mesaj.`);
 //       // Logica de activare a robotului telefonic
@@ -1405,36 +1366,36 @@ from min to max, but only if the number is a multiple of 5.
 //       // Logica de conectare a apelurilor între 2 utilizatori
 //     }
 //   }
-  
+
 //   processCall("Andrei");
 
 // function processCall(recipient, onAvailable, onNotAvailable) {
 //     // Simulăm disponibilitatea unui abonat cu un număr aleatoriu
 //     const isRecipientAvailable = Math.random() > 0.5;
-  
+
 //     if (!isRecipientAvailable) {
 //       onNotAvailable(recipient);
 //       return;
 //     }
-  
+
 //     onAvailable(recipient);
 //   }
-  
+
 //   function takeCall(name) {
 //     console.log(`Vă conectăm cu utilizatorul ${name}, va rugăm să așteptați...`);
 //     // Logica de conectare a apelurilor între 2 utilizatori
 //   }
-  
+
 //   function activateAnsweringMachine(name) {
 //     console.log(`Abonatul ${recipient} nu este disponibil, va rugăm să lăsați un mesaj.`);
 //     // Logica de activare a robotului telefonic
 //   }
-  
+
 //   function leaveHoloMessage(name) {
 //     console.log(`Abonatul ${name} nu este disponibil, înregistrați o hologramă.`);
 //     // Logica de înregistrare a unei holograme
 //   }
-  
+
 //   processCall("Andrei", takeCall, activateAnsweringMachine);
 //   processCall("Vasile", takeCall, leaveHoloMessage);
 
@@ -1443,29 +1404,29 @@ from min to max, but only if the number is a multiple of 5.
 //       console.log(i);
 //     }
 //   }
-  
+
 //   repeatLog(11);
 
 // function printValue(value) {
 //     console.log(value);
 //   }
-  
+
 //   function prettyPrint(value) {
 //     console.log("Logging value: ", value);
 //   }
-  
+
 //   function repeat(n, action) {
 //     for (let i = 0; i < n; i += 1) {
 //       action(i);
 //     }
 //   }
-  
+
 //   // Parsăm printValue ca și funcție callback
 //   repeat(3, printValue);
 //   // 0
 //   // 1
 //   // 2
-  
+
 //   // Parsăm prettyPrint ca și funcție callback
 //   repeat(3, prettyPrint);
 //   // Logging value: 0
@@ -1488,18 +1449,16 @@ from min to max, but only if the number is a multiple of 5.
 // function classicAdd(a, b, c) {
 //     return a + b + c;
 //   }
-  
+
 //   // Declararea unei funcții de tip arrow
 //   const arrowAdd = (a, b, c) => {
 //     return a + b + c;
 //   };
 
-
 //Dacă sunt mai mulți parametri, aceștia vor fi separați prin virgulă în paranteze rotunde, între semnul egal = și săgeată =>.
 // const add = (a, b, c) => {
 //     return a + b + c;
 //   };
-
 
 //Dacă există un singur parametru, declararea acestuia poate fi fără paranteze.
 //   const add = a => {
@@ -1526,14 +1485,14 @@ from min to max, but only if the number is a multiple of 5.
 // function classicAdd(a, b, c) {
 //     return a + b + c;
 //   }
-  
+
 //   // După
 //   const arrowAdd = (a, b, c) => a + b + c;
 
 // const add = (...args) => {
 //     console.log(args);
 //   };
-  
+
 //   add(1, 2, 3); // [1, 2, 3]
 
 // const numbers = [5, 10, 15, 20, 25];
@@ -1558,8 +1517,6 @@ from min to max, but only if the number is a multiple of 5.
 
 // numbers.forEach(logMessage);
 
-
-
 // Abordare imperativă
 // const numbers = [1, 2, 3, 4, 5];
 // const filteredNumbers = [];
@@ -1570,7 +1527,6 @@ from min to max, but only if the number is a multiple of 5.
 //   }
 // }
 //console.log(filteredNumbers); // [4, 5]
-
 
 // // Abordare declarativă
 // const numbers = [1, 2, 3, 4, 5];
@@ -1589,13 +1545,12 @@ from min to max, but only if the number is a multiple of 5.
 // const doOtherThing = function(){
 //     console.log('Something')
 // }
-// // //functie expresie - function expretion not used 
+// // //functie expresie - function expretion not used
 // // const doOtherThing2 = function RarlyUsed(){
 // //     console.log('Something')
 // // }
 // // doOtherThing2();
 // //functie expresie - function expretion
-
 
 // //functie expresie - function expretion
 // // function arrow
@@ -1614,7 +1569,6 @@ from min to max, but only if the number is a multiple of 5.
 // console.log(result);
 // //functie expresie - function expretion
 
- 
 // // ## Example 1 - Function callback
 
 // // Write the following functions:
@@ -1626,7 +1580,6 @@ from min to max, but only if the number is a multiple of 5.
 // //   console
 // // - `logTotalPrice(product)` - callback receiving product object and logging
 // //   the total value of the item in the console
-
 
 // function createProduct(partialProduct, callback) {
 //     const product = {
@@ -1646,8 +1599,6 @@ from min to max, but only if the number is a multiple of 5.
 
 // createProduct({ name: "🍎", price: 30, quantity: 3 }, logProduct);
 // createProduct({ name: "🍋", price: 20, quantity: 5 }, logTotalPrice);
-
-
 
 // ## Example 2 - Function callback
 
@@ -1708,15 +1659,12 @@ from min to max, but only if the number is a multiple of 5.
 // account.withdraw(200, handleSuccess, handleError);
 // account.deposit(600, handleSuccess, handleError);
 
-
-
 // ## Example 3 - Function callback
 
 // Write a function `each(array, callback)` that takes as its first parameter
 // array, and the second - a function that will be applied to each element of the array.
 // The each function must return a new array whose elements will be the results
 // of callback call.
-
 
 // function each(array, callback) {
 // //   const newArr = [];
@@ -1726,10 +1674,10 @@ from min to max, but only if the number is a multiple of 5.
 // const newArr = [];
 // // debugger
 // array.forEach(element => {
-//     newArr.push(callback(element));  
+//     newArr.push(callback(element));
 // });
 // return newArr;
-  
+
 // }
 
 // function multiplyByThree(value){
@@ -1743,7 +1691,6 @@ from min to max, but only if the number is a multiple of 5.
 // );
 
 // console.log(each([64, 49, 36, 25, 16], multiplyByThree))
-
 
 // ## Example 4 - Arrow functions
 
@@ -1776,12 +1723,9 @@ from min to max, but only if the number is a multiple of 5.
 // createProduct({ name: "🍎", price: 30, quantity: 3 }, logProduct);
 // createProduct({ name: "🍋", price: 20, quantity: 5 }, logTotalPrice);
 
-
-
 // ## Example 5 - Arrow functions
 
 // Make the code refactoring using arrow functions.
-
 
 // const TRANSACTION_LIMIT = 1000;
 
@@ -1835,12 +1779,9 @@ from min to max, but only if the number is a multiple of 5.
 // account.deposit(-600, handleSuccess, handleError);
 // account.deposit(600, handleSuccess, handleError);
 
-
-
 // ## Example 6 - Inline Arrow Functions
 
 // Make the code refactoring using arrow functions.
-
 
 // function each(array, callback) {
 //   const newArr = [];
@@ -1876,7 +1817,6 @@ from min to max, but only if the number is a multiple of 5.
 //   each([64, 49, 36, 25, 16], (value) => value - 10)
 // );
 
-
 // // console.log(
 // //   each([64, 49, 36, 25, 16], function (value) {
 // //     return Math.sqrt(value);
@@ -1906,11 +1846,9 @@ from min to max, but only if the number is a multiple of 5.
 //   each([1.5, 2.1, 16.4, 9.7, 11.3], value => Math.floor(value))
 // );
 
-
 // ## Example 7 - forEach method
 
 // Make the code refactoring using `forEach` method and arrow functions.
-
 
 // const logItems = items => {
 // console.log(items);
@@ -1925,12 +1863,9 @@ from min to max, but only if the number is a multiple of 5.
 // logItems(["Mango", "Poly", "Ajax"]);
 // logItems(["🍎", "🍇", "🍑", "🍌", "🍋"]);
 
-
-
 // ## Example 8 - forEach method
 
 // Make the code refactoring using `forEach` method and arrow functions.
-
 
 // const printContactsInfo = ({ names, phones }) => {
 //   const nameList = names.split(",");
@@ -1948,11 +1883,9 @@ from min to max, but only if the number is a multiple of 5.
 //   phones: "89001234567,89001112233,890055566377,890055566300",
 // });
 
-
 // ## Example 9 - forEach method
 
 // Make the code refactoring using `forEach` method and arrow functions.
-
 
 // function calсulateAverage(...args) {
 //   let total = 0;
@@ -1960,7 +1893,7 @@ from min to max, but only if the number is a multiple of 5.
 //     total += args[i];
 //   }
 //   return total / args.length;
-  
+
 // }
 
 // const calсulateAverage = (...args) => {
@@ -2046,7 +1979,6 @@ from min to max, but only if the number is a multiple of 5.
 // colorPickerOptions.find(option => option.label === "pink"); // { label: 'pink', color: '#E91E63' }
 // colorPickerOptions.find(option => option.label === "white"); // undefined
 
-
 // const total = [2, 7, 3, 14, 6].reduce((previousValue, number) => {
 //   return previousValue + number;
 // }, 0);
@@ -2057,7 +1989,7 @@ from min to max, but only if the number is a multiple of 5.
 // # din matricea iterabilă dacă initialValue nu este setată.
 // previousValue = 0
 
-// # În continuare, funcția callback este apelată pentru fiecare element al matricei. 
+// # În continuare, funcția callback este apelată pentru fiecare element al matricei.
 // # Valoarea actuală a parametrului previousValue este ceea ce funcția callback a returnat
 // # în ultima iterație.
 // Iterația 1 -> previousValue = 0 -> number = 2 -> return 0 + 2 -> return 2
@@ -2067,7 +1999,7 @@ from min to max, but only if the number is a multiple of 5.
 // Iterația 5 -> previousValue = 26 -> number = 6 -> return 26 + 6 -> return 32
 
 // # După ce întreaga matrice a fost iterată, metoda reduce() returnează valoarea acumulatorului.
-// Rezultat - 
+// Rezultat -
 
 // const students = [
 //   { name: "Andrei", score: 83 },
@@ -2259,12 +2191,11 @@ from min to max, but only if the number is a multiple of 5.
 // Aplicăm metoda filter() asupra rezultatul metodei flatMap() pentru a filtra elementele unice.
 // Peste rezultatul funcției filter(), apelăm sort().
 // Variabilei uniqueSortedCourses i se atribuie rezultatul metodei sort().
-// Un lanț de metode poate avea orice lungime, dar, de obicei, nu mai mult de 2-3 operații. În primul rând, 
+// Un lanț de metode poate avea orice lungime, dar, de obicei, nu mai mult de 2-3 operații. În primul rând,
 // metodele de iterație sunt folosite pentru operații relativ simple,
-//  pe o colecție. În al doilea rând, fiecare apel de metodă este o iterație suplimentară a matricei, 
+//  pe o colecție. În al doilea rând, fiecare apel de metodă este o iterație suplimentară a matricei,
 //  care poate afecta performanța dacă este vorba de un lanț cu mai multe metode.
 
- 
 // ## Example 1 - Map method
 
 // Let the `getModels` function return an array of models (model field) of all
@@ -2376,7 +2307,6 @@ from min to max, but only if the number is a multiple of 5.
 // Let the `makeCarsWithDiscount` function return a new array of objects with a changed
 // value of the `price` property depending on the discount passed.
 
-
 // const makeCarsWithDiscount = (cars, discount) => {
 
 // // const updateCarList = cars.map( car => {
@@ -2386,7 +2316,7 @@ from min to max, but only if the number is a multiple of 5.
 // //     ...car,
 // //     price: priceWithDiscount
 // //   }
-// // }); 
+// // });
 
 //   return cars.map( car => {
 //     const priceWithDiscount = car.price - car.price * discount;
@@ -2395,7 +2325,7 @@ from min to max, but only if the number is a multiple of 5.
 //       ...car,
 //       price: priceWithDiscount
 //     }
-//   }); 
+//   });
 
 //   // return updateCarList;
 // };
@@ -2408,7 +2338,6 @@ from min to max, but only if the number is a multiple of 5.
 // Let the `filterByPrice` function return an array of cars whose price is less
 // than the value of the `threshold` parameter.
 
-
 // const filterByPrice = (cars, threshold) => {
 //   // return cars.filter((car) => car.price < threshold)
 //    return cars.filter((car) => {
@@ -2419,12 +2348,10 @@ from min to max, but only if the number is a multiple of 5.
 // console.table(filterByPrice(cars, 30000));
 // console.table(filterByPrice(cars, 25000));
 
-
 // ## Example 4 - Filter method
 
 // Let the `getCarsWithDiscount` function return an array of cars whose
 // onSale property is true.
-
 
 // const getCarsWithDiscount = (cars) => {
 //   return cars.filter( car =>  car.onSale)
@@ -2432,14 +2359,10 @@ from min to max, but only if the number is a multiple of 5.
 
 // console.table(getCarsWithDiscount(cars));
 
-
-
 // ## Example 5 - Filter method
 
 // Let the `getCarsWithType` function return an array of cars whose type
 // coincide with the value of the `type` parameter.
-
-
 
 // const getCarsWithType = (cars, type) => {
 //   return cars.filter( car => car.type === type)
@@ -2448,9 +2371,7 @@ from min to max, but only if the number is a multiple of 5.
 // console.table(getCarsWithType(cars, "suv"));
 // console.table(getCarsWithType(cars, "sedan"));
 
-
 // ## Example 6 - The find method
-
 
 // const getCarByModel = (cars, model) => {
 //   return cars.find( car => car.model === model)
@@ -2459,13 +2380,11 @@ from min to max, but only if the number is a multiple of 5.
 // console.log(getCarByModel(cars, "F-150"));
 // console.log(getCarByModel(cars, "CX-9"));
 
-
 // ## Example 7 - Sort method
 
 // Let the `sortByAscendingAmount` function return a new array of cars
 // sorted in ascending order by the value of the `amount` property.
 
- 
 // const sortByAscendingAmount = (cars) => {
 //   return cars.sort((a, b) => a.amount - b.amount);
 // };
@@ -2480,12 +2399,10 @@ from min to max, but only if the number is a multiple of 5.
 // console.log(newArr1.sort((a, b) => a - b));
 // console.log(newArr1.sort());
 
-
 // ## Example 8 - Sort method
 
 // Let the `sortByDescendingPrice` function return a new array of cars
 // sorted in descending order by the value of the `price` property.
-
 
 // const sortByDescendingPrice = (cars) => {
 
@@ -2498,13 +2415,11 @@ from min to max, but only if the number is a multiple of 5.
 // console.table(sortByDescendingPrice(cars));
 // console.log(cars);
 
-
 // ## Example 9 - Sort method
 
 // Let the `sortByModel` function return a new array of cars sorted
 // by model name in alphabetical and reverse alphabetical order, depending on
 // the value of the `order` parameter.
-
 
 // const sortByModel = (cars, order) => {
 //  const ascSort = (a, b) => {
@@ -2534,9 +2449,6 @@ from min to max, but only if the number is a multiple of 5.
 // }
 //  })
 
- 
- 
- 
 //   // if (order === 'asc') {
 //   //   return [...cars].sort( (a, b) => a.model -b.model);
 //   // } else if (order === 'desc'){
@@ -2548,12 +2460,10 @@ from min to max, but only if the number is a multiple of 5.
 // console.table(sortByModel(cars, "asc"));
 // console.table(sortByModel(cars, "desc"));
 
-
 // ## Example 10 - Reduce method
 
 // Let the `getTotalAmount` function return the total number of cars (the value
 // of the `amount` properties).
-
 
 // const getTotalAmount = (cars) => {
 //   return cars.reduce( (total, car) => {
@@ -2564,7 +2474,6 @@ from min to max, but only if the number is a multiple of 5.
 // };
 
 // console.log(getTotalAmount(cars));
-
 
 // ## Example 11 - Method chains
 
@@ -2584,12 +2493,10 @@ from min to max, but only if the number is a multiple of 5.
 
 // console.table(getModelsOnSale(cars));
 
-
 // ## Example 12 - Method chains
 
 // Let the `getSortedCarsOnSale` function return an array of cars for sale
 // (onSale property), sorted by price ascending.
-
 
 // const getSortedCarsOnSale = (cars) => {
 //     const tempCars = [...cars];
@@ -2605,7 +2512,6 @@ from min to max, but only if the number is a multiple of 5.
 // };
 
 // console.table(getSortedCarsOnSale(cars));
-
 
 // function foo() {
 //   console.log(this);
@@ -2627,43 +2533,40 @@ from min to max, but only if the number is a multiple of 5.
 // // greetGuest.apply(mango, ["Bun venit"]); // Bunt venit, Vasile.
 // greetGuest.apply(poly, ["Mă bucur să te revăd"]); // Mă bucur să te revăd, Georgiana.
 
-
-
 // 'use strict'
 // function foo() {
 //     console.log(this);
 //   }
 //   foo();
-  
+
 //   function addFive(num){
 //    return num + 5;
 //   }
 //   console.log(addFive(10));
-  
+
 //   const addFiveResult = addFive(20);
-  
-  
+
 //   console.log(addFiveResult)
 //   const addFiveCopy = addFive;
 //   console.log(addFiveCopy(30))
-  
+
 //   const myObj = {
 //     fullName: 'simon klhawam',
 //     logName: function (){
 //       console.log(this.fullName)
 //     }
 //   }
-  
+
 //   myObj.logName();
-  
+
 //   const newObjFunctionCopy = myObj.logName;
 //   newObjFunctionCopy();
-  
+
 //   const newObj = {
 //     fullName: 'Alex',
 //     doTheCopy: myObj.logName
 //   }
-  
+
 //   newObj.doTheCopy();
 //   console.log(newObj.anyPropertyThatDoesntExistWillBeUndefined);
 //   // nu scrieti nicio data denumiri de variabile asa lungi
@@ -2672,14 +2575,11 @@ from min to max, but only if the number is a multiple of 5.
 
 //   console.log(this);
 
-
-
 // ## Example 1 - Jewelry workshop
 
 // Write a `calcTotalPrice(stoneName)` method that takes the name of a stone,
 // calculates and returns the total cost of stones with that name, price, and
 // quantity from the `stones` property.
-
 
 // const chopShop = {
 //   stones: [
@@ -2699,7 +2599,6 @@ from min to max, but only if the number is a multiple of 5.
 //   },
 // };
 
-
 // console.log(chopShop.calcTotalPrice("Emerald")); // 5200
 // console.log(chopShop.calcTotalPrice("Diamond")); // 8100
 // console.log(chopShop.calcTotalPrice("Sapphire")); // 9800
@@ -2708,7 +2607,6 @@ from min to max, but only if the number is a multiple of 5.
 // ## Example 2 - Phone book
 
 // Make methods' refactoring of the `phonebook` object to make the code work.
-
 
 // const phonebook = {
 //   contacts: [],
@@ -2732,7 +2630,6 @@ from min to max, but only if the number is a multiple of 5.
 //   }
 // };
 
-
 // phonebook.add({
 //   name: "Mango",
 //   email: "mango@mail.com",
@@ -2745,7 +2642,6 @@ from min to max, but only if the number is a multiple of 5.
 // });
 
 // console.log(phonebook.get());
-
 
 // ## Example 3 -Calculator
 
@@ -2771,7 +2667,6 @@ from min to max, but only if the number is a multiple of 5.
 //   mult(){
 //     return `Produsul celor doua numere este: ${this.firstNumber * this.secondNumber}`;
 //   }
-
 
 // };
 
@@ -2855,7 +2750,6 @@ from min to max, but only if the number is a multiple of 5.
 // console.log(andrei.getEmail());
 // // // console.log(andrei.#email); // Va apărea o eroar
 
-
 // class User{
 //   #email;
 
@@ -2872,7 +2766,6 @@ from min to max, but only if the number is a multiple of 5.
 //     this.#email = newEmail;
 //   }
 // }
-
 
 // const mango = new User ({ name: 'Mango', email: 'mango@email.com' });
 // console.log(mango.email);
@@ -3162,7 +3055,7 @@ from min to max, but only if the number is a multiple of 5.
 // console.log(secondToggle.on);
 // console.groupEnd("secondToggle");
 
- //  Primitive type 
+//  Primitive type
 
 /**
  * String
@@ -3268,7 +3161,7 @@ from min to max, but only if the number is a multiple of 5.
 // });
 
 // const newDoubledCopy = myList.map((listItem) => {
-//     return listItem * 2; 
+//     return listItem * 2;
 //  });
 
 // console.log('NewArray:', newDoubledCopy);
@@ -3282,7 +3175,6 @@ from min to max, but only if the number is a multiple of 5.
 // const allValuesTwo = myList.filter(element => element === 2);
 // // console.log(allValuesTwo);
 
-
 // const students = [
 //     { name: "Vasile", courses: ["matematică", "fizică"] },
 //     { name: "Ion", courses: ["informatică", "matematică"] },
@@ -3294,9 +3186,9 @@ from min to max, but only if the number is a multiple of 5.
 //     (course, index, array) => {
 //        return array.indexOf(course) === index;
 //     }
-//   ); 
+//   );
 
-//   console.log(uniqueCourses); 
+//   console.log(uniqueCourses);
 
 // const resultValue = myList.reduce((acc, curr) => {
 //     return acc * curr;
@@ -3325,7 +3217,6 @@ from min to max, but only if the number is a multiple of 5.
 // console.log(addFiveTwice(20, addFive));
 // console.log(addFiveTwice(10, (number) => number + 3));
 
-
 /**
  * Scope
  */
@@ -3334,7 +3225,7 @@ from min to max, but only if the number is a multiple of 5.
 // let myLet = 2;
 
 // if (true) {
-//     let myConst = 3; 
+//     let myConst = 3;
 //     const myLet = 4;
 //     const myLocalConst = 5;
 //     let myLocalLet = 6;
@@ -3347,7 +3238,7 @@ from min to max, but only if the number is a multiple of 5.
 // console.log(myConst, '--Global scope');
 // console.log(myLet, '--Global scope');
 // console.log(myLocalConst, '--Global scope');
-// console.log(myLocalLet, '--Global scope'); 
+// console.log(myLocalLet, '--Global scope');
 
 // const addFive = (myConst) => {
 //     // console.log(myConst);
@@ -3356,10 +3247,10 @@ from min to max, but only if the number is a multiple of 5.
 // }
 
 // console.log(addFive(10));
-  
+
 // const addSix = (number) => {
-//     const result = number + 6; // nu returnam nimic, vom vedea undefined 
-// } 
+//     const result = number + 6; // nu returnam nimic, vom vedea undefined
+// }
 // console.log(addSix(10));
 
 // const myArr = [1, 2, 3, 4];
@@ -3397,41 +3288,40 @@ from min to max, but only if the number is a multiple of 5.
 // // numbersArray = [...numbersArray, 5]; // nu va functiona, va da eroare pentru ca este const
 // // console.log(numbersArray);
 
-
 // const testFunction = () => {
-    // console.log('Test');
+// console.log('Test');
 // }
 
 // testFunction();
 
 // Object literal creation
-let puppy = {  
-    name: 'Rex',
-    age: 5,
-    name: 'Azorel',
-    address: {
-        city: 'London',
-        levelTwo: {
-            firstProp: 1,
-            levelThree: 3,
-            street: 'Long Street'
-        }
-    }
-}
+// let puppy = {
+//     name: "Rex",
+//     age: 5,
+//     name: "Azorel",
+//     address: {
+//         city: "London",
+//         levelTwo: {
+//             firstProp: 1,
+//             levelThree: 3,
+//             street: "Long Street",
+//         },
+//     },
+// };
 
-puppy.age = 7;
-puppy.breed = 'Ciobanesc';
-// console.log(puppy.breed);
-// console.log(puppy);
+// puppy.age = 7;
+// puppy.breed = "Ciobanesc";
+// // console.log(puppy.breed);
+// // console.log(puppy);
 
-puppy = {
-    ...puppy,
-    breed: 'Labrador'
-}
+// puppy = {
+//     ...puppy,
+//     breed: "Labrador",
+// };
 
-// const newPuppy = puppy;
-// console.table(puppy)
-const anotherPuppy = {...puppy,  ...puppy.address};
+// // const newPuppy = puppy;
+// // console.table(puppy)
+// const anotherPuppy = { ...puppy, ...puppy.address };
 
 // console.table(puppy);
 // console.table(anotherPuppy);
@@ -3460,8 +3350,6 @@ const anotherPuppy = {...puppy,  ...puppy.address};
 
 // const [testValueDestructured, updateTestDestructured] = testExtract();
 
-
-
 // const listWithId = document.querySelector('#menu');
 // listWithId.style.textTransform = 'uppercase';
 // listWithId.style.fontSize = '24px';
@@ -3479,7 +3367,6 @@ const anotherPuppy = {...puppy,  ...puppy.address};
 // const firstMenuItem = document.querySelector(".menu-item");
 // firstMenuItem.style.color = 'tomato';
 // console.log(firstMenuItem);
-
 
 // const image = document.querySelector(".image");
 // console.log(image.src); // https://picsum.photos/id/9/320/240
@@ -3550,3 +3437,37 @@ const anotherPuppy = {...puppy,  ...puppy.address};
 
 // const containerEl = document.querySelector('#container');
 // console.dir(containerEl)
+
+//-------------------------------------------------------------------
+
+// Change code below this line
+
+// const galleryList = document.querySelector(".gallery");
+
+// galleryItems.forEach((item) => {
+//     const galleryItem = document.createElement("li");
+//     galleryItem.classList.add("gallery__item");
+
+//     const galleryLink = document.createElement("a");
+//     galleryLink.classList.add("gallery__link");
+//     galleryLink.href = item.original;
+
+//     const galleryImage = document.createElement("img");
+//     galleryImage.classList.add("gallery__image");
+//     galleryImage.src = item.preview;
+//     galleryImage.alt = item.description;
+
+//     galleryLink.appendChild(galleryImage);
+//     galleryItem.appendChild(galleryLink);
+
+//     galleryList.appendChild(galleryItem);
+// });
+
+// const lightbox = new SimpleLightbox(".gallery a", {
+//     captionsData: "alt",
+//     captionDelay: 250,
+// });
+
+// console.log(galleryItems);
+// console.log(galleryItems);
+//-------------------------------------------------------------------
