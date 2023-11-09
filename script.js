@@ -302,3 +302,65 @@ function getRandomHexColor() {
 }
 
 // End ex
+//--------------------------------------------------------------------------//
+// const paragraph = document.querySelector(".output");
+// const newParagraph = `<p class="newOutput"> New SELECTED COLORES
+//  BY NEWPARAGRAPH WITH THE CLASS OF NEWOUTPUT.</p>
+//  <a class="output-link" href="#"> READ MORE...</a>`;
+// output.innerHTML += newParagraph;
+
+// const newOutput = document.querySelector(".newOutput");
+// console.log(newOutput.innerHTML);
+
+// const spanCallById = document.querySelector(".nameOutput");
+// console.log(nameOutput.innerHTML);
+
+// const changeContent = document.querySelector(".title .nameOutput");
+// const newContent = `<h2 class="new-line">THIS IS MY NEW LINE THAT HAVE
+// BEEN CHANGED BY INNER HTML!</h2>
+// <p> this will go also!</p>`;
+// changeContent.innerHTML += newContent;
+//--------------------------------------------------------------------------//
+const technologiesNew = ["HTML", "CSS", "JavaScript", "React", "Node"];
+const list = document.querySelector(".list");
+
+const markUp = technologiesNew
+    .map(
+        (technologyy) => `<li class="list-item"> ${technologyy}
+</li>`
+    )
+    .join("");
+console.log(markUp);
+list.innerHTML = markUp;
+
+const markUpNew = document.querySelector(".list");
+
+const newList = `
+<li> new list</li>
+<li> new list</li>
+<li> new list</li>
+<li> new list</li>
+<li> new list</li>`;
+list.innerHTML = newList;
+
+let newListWithLi = technologiesNew
+    .map((technologyy) => `<li>${technologyy}</li>`)
+    .join("");
+console.log(newListWithLi);
+list.innerHTML = newListWithLi;
+
+const listThree = document.querySelector(".list-three");
+const threeNewTechnologies = ["Python", "JAVA", "SQL"];
+const markUpThree = threeNewTechnologies
+    .map((theThreeTechnologies) => `<li> ${theThreeTechnologies}</li>`)
+    .join("");
+listThree.insertAdjacentHTML("beforeend", markUpThree);
+listThree.insertAdjacentHTML(
+    "beforebegin",
+    "<h5>Added three more programing languages at the end</h5>"
+);
+listThree.insertAdjacentHTML(
+    "afterend",
+    "<h5> by this line i end my code here :)</h5>"
+);
+//--------------------------------------------------------------------------//
