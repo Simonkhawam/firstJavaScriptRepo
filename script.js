@@ -364,3 +364,243 @@ listThree.insertAdjacentHTML(
     "<h5> by this line i end my code here :)</h5>"
 );
 //--------------------------------------------------------------------------//
+
+const singlebtn = document.querySelector("#single");
+const handleClickSingleBtn = () => {
+    console.log("click envent listner one time callback");
+};
+singlebtn.addEventListener("click", handleClickSingleBtn);
+
+const multipleBtn = document.querySelector("#multiple");
+
+const firstCallBack = () => {
+    console.log("First callback");
+};
+const secondCallBack = () => {
+    console.log("second callback");
+};
+const thirdCallBack = () => {
+    console.log("third call back");
+};
+multipleBtn.addEventListener("click", firstCallBack);
+multipleBtn.addEventListener("click", secondCallBack);
+multipleBtn.addEventListener("click", thirdCallBack);
+//-----------------------------------------------------------------------//
+
+const addListenerBtn = document.querySelector(".js-add");
+const removeListenerBtn = document.querySelector(".js-remove");
+
+const btnClickMe = document.querySelector(".target-btn");
+
+const handleClickBtn = () => {
+    console.log("click event listener CallBack");
+};
+addListenerBtn.addEventListener("click", () => {
+    btnClickMe.addEventListener("click", handleClickBtn);
+    console.log("click event listener was added to btn");
+});
+
+removeListenerBtn.addEventListener("click", () => {
+    btnClickMe.removeEventListener("click", handleClickBtn);
+    console.log("click event was removed from btn");
+});
+//-----------------------------------------------------------------------//
+const button = document.querySelector(".eventBtn");
+
+const handleClickEvent = (event) => {
+    console.log("event: ", event);
+    console.log("event type: ", event.type);
+    console.log("currentTarget: ", event.currentTarget);
+};
+
+button.addEventListener("click", handleClickEvent);
+//-----------------------------------------------------------------------//
+
+//-----------------------------------------------------------------------//
+
+const clearLogBtn = document.querySelector(".js-clear");
+const logList = document.querySelector(".log-list");
+let keypressCounter = 1;
+
+console.log(clearLogBtn);
+
+document.addEventListener("keydown", logMessage);
+document.addEventListener("keyup", logMessage);
+clearLogBtn.addEventListener("click", reset);
+
+function logMessage({ type, key, code }) {
+    const markup = `<div class="log-item">
+    <span class="chip">${keypressCounter}</span>
+    <ul>
+      <li><b>type</b>: ${type}</li>
+      <li><b>Key</b>: ${key}</li>
+      <li><b>Code</b>: ${code}</li>
+    </ul>
+  </div>`;
+
+    logList.insertAdjacentHTML("afterbegin", markup);
+
+    if (type === "keyup") {
+        incrementKeypressCounter();
+    }
+}
+
+function reset() {
+    keypressCounter = 1;
+    logList.innerHTML = "";
+}
+
+function incrementKeypressCounter() {
+    keypressCounter += 1;
+}
+//-----------------------------------------------------------------------//
+
+const select = document.querySelector(".cars-select");
+const textOutput = document.querySelector(".text-output");
+const valueOutput = document.querySelector(".value-output");
+
+select.addEventListener("change", setOutput);
+
+function setOutput(event) {
+    const selectedOptionValue = event.currentTarget.value;
+    const selectedOptionIndex = event.currentTarget.selectedIndex;
+    const selectedOptionText =
+        event.currentTarget.options[selectedOptionIndex].text;
+    textOutput.textContent = selectedOptionText;
+    valueOutput.textContent = selectedOptionValue;
+}
+//-----------------------------------------------------------------------//
+
+// const textInput = document.querySelector(".text-input-test");
+// const outputO = document.querySelector(".output");
+// textInput.addEventListener("input", (event) => {
+//     outputO.textContent = event.currentTarget.value;
+// });
+
+//-----------------------------------------------------------------------//
+
+const textInput = document.querySelector(".text-input");
+const setFocusBtn = document.querySelector('[data-action="set"]');
+const removeFocusBtn = document.querySelector('[data-action="remove"]');
+
+setFocusBtn.addEventListener("click", () => {
+    textInput.focus();
+});
+
+removeFocusBtn.addEventListener("click", () => {
+    textInput.blur();
+});
+
+textInput.addEventListener("focus", () => {
+    textInput.value = "This input has focus";
+});
+
+textInput.addEventListener("blur", () => {
+    textInput.value = "";
+});
+//-----------------------------------------------------------------------//
+
+const registerFormEx = document.querySelector(".form");
+
+registerFormEx.addEventListener("submit", handleSubmit);
+
+function handleSubmit(event) {
+    event.preventDefault();
+    const form = event.target;
+    const login = form.elements.login.value;
+    const password = form.elements.password.value;
+
+    if (login === "" || password === "") {
+        return console.log("Please fill in all the fields!");
+    }
+
+    console.log(`Login: ${login}, Password: ${password}`);
+    form.reset();
+}
+//-----------------------------------------------------------------------//
+
+const parent = document.querySelector("#parent");
+const child = document.querySelector("#child");
+const descendant = document.querySelector("#descendant");
+
+parent.addEventListener("click", () => {
+    console.log("click pe parent");
+});
+child.addEventListener("click", () => {
+    console.log("click pe child");
+});
+descendant.addEventListener("click", () => {
+    console.log("click pe toate pana sus");
+});
+//-----------------------------------------------------------------------//
+
+// import { galleryItems } from "./gallery-items.js";
+
+// console.log(galleryItems);
+
+// galleryItems.forEach((item) => {
+//     const galleryItem = document.createElement("li");
+//     galleryItem.classList.add("gallery__item");
+
+//     const galleryLink = document.createElement("a");
+//     galleryLink.classList.add("gallery__link");
+//     galleryLink.href = item.original;
+
+//     const galleryImage = document.createElement("img");
+//     galleryImage.classList.add("gallery__image");
+//     galleryImage.src = item.preview;
+//     galleryImage.alt = item.description;
+
+//     galleryLink.appendChild(galleryImage);
+//     galleryItem.appendChild(galleryLink);
+
+//     galleryList.appendChild(galleryItem);
+// });
+
+// const lightbox = new SimpleLightbox(".gallery a", {
+//     captionsData: "alt",
+//     captionDelay: 250,
+// });
+//-----------------------------------------------------------------------//
+// const listEl = document.querySelector(".gallery");
+
+// galleryItems.forEach((item) => {
+//     const listItemEl = document.createElement("li");
+//     listItemEl.classList.add("gallery__item");
+//     listItemEl.innerHTML = `<a class='gallery__link' href='${item.original}'>
+//         <img class='gallery__image'
+//         src='${item.preview}'
+//         data-source='${item.original}'
+//         alt='${item.description}'/>
+//     </a>`;
+//     listEl.append(listItemEl);
+// });
+
+// listEl.addEventListener("click", openImageInLightbox);
+
+// function openImageInLightbox(event) {
+//     const clickedOn = event.target;
+
+//     if (event.target.nodeName !== "IMG") {
+//         return;
+//     }
+
+//     event.preventDefault();
+//     basicLightbox
+//         .create(
+//             `<img width='1400' height='900' src='${clickedOn.dataset.source}'/>`
+//         )
+//         .show();
+// }
+//-----------------------------------------------------------------------//
+// const heading = document.createElement("h1");
+// console.log(heading); // <h1></h1>
+
+// heading.textContent = "This is a heading";
+// console.log(heading); // <h1>This is a heading</h1>
+
+// const image = document.createElement("img");
+// image.src = "https://placeimg.com/640/480/nature";
+// image.alt = "Nature";
+// console.log(image); // <img src="https://placeimg.com/640/480/nature" alt="Nature" />
+//-----------------------------------------------------------------------//
